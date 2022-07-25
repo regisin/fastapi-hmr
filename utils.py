@@ -6,14 +6,6 @@ reloader = """
     /*
     * Hot Module Reload
     */
-    ws.addEventListener('message', (event) => {
-        var content = event.data;
-        console.log('[WS:message]', content);
-        event.preventDefault();
-    });
-    ws.addEventListener('open', (event) => {
-        console.log('[WS:open]', 'HMR websocket opened.');
-    });
     ws.addEventListener('close',() => {
         console.log('[WS:close]', 'HMR websocket closed.');
 

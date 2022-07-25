@@ -19,7 +19,7 @@ app = FastAPI(
 def home(request: Request):
     return templates.TemplateResponse('Home.html', {"request": request,
                                                 "reloader": reloader,
-                                                "title":"Totato"})
+                                                "title":"Potato"})
 
 
 
