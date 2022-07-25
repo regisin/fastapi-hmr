@@ -1,6 +1,6 @@
 # FastAPI Hot Module Reload
 
-This is not a package, just a companion repo to the tutorial found on (my blog)[https://www.paregis.me/posts/fastapi-frontend-development].
+This is not a package, just a companion repo to the tutorial found on [my website](https://www.paregis.me/posts/fastapi-frontend-development).
 
 It's a proof-of-concept of how you can use FastAPI to develop the frontend of a website with hot reload in development mode.
 
@@ -13,6 +13,7 @@ git clone https://github.com/regisin/fastapi-hmr.git
 cd fastapi-hmr
 python -m venv env
 source env/bin/activate
+pip install "fastapi[all]"
 uvicorn main:app --reload --reload-include '*.html'
 ```
 
